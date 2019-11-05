@@ -15,7 +15,7 @@ app.use(KoaCompress({
     threshold: 2048,
     flush: require('zlib').Z_SYNC_FLUSH
 }));
-app.use(KoaStatic(path.join(__dirname, '../')), {
+app.use(KoaStatic(path.join(__dirname, '../dist')), {
     maxAge: 365 * 24 * 60 * 60
 });
 
